@@ -10,20 +10,20 @@
 <body>
 
     <main>
-        <form>
-            <input type="text" placeholder="Enter Location" autocomplete="off">
+        <form id="form">
+            <input type="text" placeholder="Enter Location" autocomplete="off" id="valueSearch">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
 
         <section class="result">
-            <figure class="name">
-                <figcaption>London</figcaption>
-                <img src="https://flagsapi.com/GB/shiny/32.png" alt="" />
+            <figure class="name" id="city">
+                <figcaption class="cityName">London</figcaption>
+                <img src="https://flagsapi.com/GB/shiny/32.png" alt="" class="flag" />
             </figure>
-            <figure class="temperature">
-                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="" />
+            <figure class="temperature" id="temp">
+                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt=""  class="tempImg"/>
                 <figcaption>
-                    <span>31</span>
+                    <span class="degree">31</span>
                     <sup> o </sup>
                 </figcaption>
             </figure>
@@ -35,19 +35,19 @@
                 <li>
                     <span>Clouds</span>
                     <i class="fa-solid fa-cloud"></i>
-                    <span>98</span>%
+                    <span id="clouds">98</span>%
                 </li>
                 <li>
                     <span>Humidity</span>
                     <i class="fa-solid fa-droplet"></i>
-                    <span>55</span>%
+                    <span id="humidity">55</span>%
                     
 
                 </li>  
                 <li>
                     <span>Pressure</span>
                     <i class="fa-solid fa-gauge"></i>
-                    <span>1011</span>hpa
+                    <span id="pressure">1011</span>hpa
                 </li>          
             </ul>
         </section>
